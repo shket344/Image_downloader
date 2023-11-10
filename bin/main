@@ -2,5 +2,12 @@
 # frozen_string_literal: true
 
 require_relative '../lib/connection_validator'
+require_relative '../lib/reader'
+require_relative '../lib/performance'
 
-ConnectionValidator.call
+unless ARGV.any?
+  warn 'Please, write file name'
+  exit
+end
+
+Performance.call(ConnectionValidator, Reader, ARGV.first)
