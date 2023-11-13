@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'simplecov'
+require 'faker'
 require 'pry'
 
 SimpleCov.start

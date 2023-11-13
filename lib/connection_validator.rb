@@ -8,9 +8,9 @@ class ConnectionValidator
 
     begin
       dns_resolver.getaddress('google.com')
-      warn 'Connection valid:'
+      warn 'Connection valid!'
     rescue Resolv::ResolvError
-      warn 'No Internet connection'
+      warn 'No Internet connection!'
       exit
     end
   end

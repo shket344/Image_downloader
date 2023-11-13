@@ -12,7 +12,7 @@ describe ConnectionValidator do
       end
 
       it 'returns true' do
-        expect { subject }.to output("Connection valid:\n").to_stderr
+        expect { subject }.to output("Connection valid!\n").to_stderr
       end
     end
 
