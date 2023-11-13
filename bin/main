@@ -2,12 +2,13 @@
 # frozen_string_literal: true
 
 require_relative '../lib/connection_validator'
+require_relative '../lib/folder_validator'
 require_relative '../lib/reader'
 require_relative '../lib/performance'
 
-unless ARGV.any?
-  warn 'Please, write file name'
+unless ARGV.size == 2
+  warn 'Please, write folder path and file name.'
   exit
 end
 
-Performance.call(ConnectionValidator, Reader, ARGV.first)
+Performance.call(ConnectionValidator, FolderValidator, ARGV.first, Reader, ARGV.last)
