@@ -12,7 +12,7 @@ Metrics/BlockLength:
   Max: 60
 
 Metrics/ParameterLists:
-  Max: 6
+  Max: 7
 
 Style/Documentation:
   Enabled: false
