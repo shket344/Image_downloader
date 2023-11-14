@@ -7,7 +7,7 @@ describe ImageDownloader do
     subject { described_class.call([url], path_for_downloads) }
     let(:path_for_downloads) { 'spec/fixtures/test_images/' }
     let(:name) { 'test_name' }
-    let(:url) { "https://#{name}.png" }
+    let(:url) { "https://test/#{name}.png" }
 
     before do
       stub_request(:get, url)
