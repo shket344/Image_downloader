@@ -8,6 +8,9 @@ Lint/EmptyBlock:
 Lint/MissingSuper:
   Enabled: false
 
+Metrics/BlockLength:
+  Max: 60
+
 Metrics/ParameterLists:
   Max: 6
 

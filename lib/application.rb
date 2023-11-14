@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+require 'mechanize'
+require 'parallel'
+require 'pry'
+
 class Application
   def self.call(...)
     new(...).call
