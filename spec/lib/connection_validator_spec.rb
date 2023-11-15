@@ -23,6 +23,8 @@ describe ConnectionValidator do
 
       it 'returns true' do
         expect { subject }.to raise_error SystemExit
+        expect { subject }.to output("No Internet connection!\n").to_stderr
+                                                                 .and raise_error SystemExit
       end
     end
   end

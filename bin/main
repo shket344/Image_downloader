@@ -5,6 +5,7 @@ require_relative '../lib/connection_validator'
 require_relative '../lib/folder_validator'
 require_relative '../lib/reader'
 require_relative '../lib/url_validator'
+require_relative '../lib/image_downloader'
 require_relative '../lib/performance'
 
 unless ARGV.size == 2
@@ -12,4 +13,4 @@ unless ARGV.size == 2
   exit
 end
 
-Performance.call(ConnectionValidator, FolderValidator, ARGV.first, Reader, ARGV.last, UrlValidator)
+Performance.call(ConnectionValidator, FolderValidator, ARGV.first, Reader, ARGV.last, UrlValidator, ImageDownloader)
