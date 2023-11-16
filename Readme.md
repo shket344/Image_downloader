@@ -24,7 +24,7 @@ $ chmod +x bin/main
 
 #### Running the script:
 
-$ bin/main public/links.txt
+$ bin/main public/images public/links.txt
 
 
 #### Running the tests:
